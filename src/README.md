@@ -1,3 +1,5 @@
+Complexidade dos algoritmos de ordenação
+
 Bubble Sort
 
 - Melhor caso: O(n)
@@ -14,7 +16,7 @@ Selection Sort
 - Pior caso: O(n²)
 - Espaço: O(1)
 
-Procura o menor elemento da parte não ordenada e coloca na posição correta.
+Procura o menor elemento e coloca na posição correta.
 
 Insertion Sort
 
@@ -23,7 +25,7 @@ Insertion Sort
 - Pior caso: O(n²)
 - Espaço: O(1)
 
-Pega um elemento por vez e o insere na posição correta da parte já ordenada.
+Insere cada elemento na posição correta da parte já ordenada.
 
 Merge Sort
 
@@ -32,26 +34,52 @@ Merge Sort
 - Pior caso: O(n log n)
 - Espaço: O(n)
 
-Divide o vetor em partes menores, ordena as partes e depois intercala os resultados.
+Divide o vetor em partes menores e depois intercala as partes ordenadas.
+
+Quick Sort
+
+- Melhor caso: O(n log n)
+- Caso médio: O(n log n)
+- Pior caso: O(n²)
+- Espaço: O(log n) em média
+
+Escolhe um pivô e divide os elementos entre menores e maiores que ele.
+
+Heap Sort
+
+- Melhor caso: O(n log n)
+- Caso médio: O(n log n)
+- Pior caso: O(n log n)
+- Espaço: O(1)
+
+Constrói uma Heap e remove repetidamente o maior ou menor elemento.
 
 ---
 
-Bubble → O(n²) → compara vizinhos
+Bubble → O(n²)
 
-Selection → O(n²) → procura o menor
+Selection → O(n²)
 
-Insertion → O(n²) → insere na posição
+Insertion → O(n²)
 
-Merge → O(n log n) → divide e intercala
+Merge → O(n log n)
 
-Estruturas de complexidade
+Quick → O(n log n) médio / O(n²) pior
 
-O(1) → operação constante
+Heap → O(n log n) em todos os casos
 
-O(n) → um percurso pelo vetor
+---
 
-O(n²) → dois loops dependentes de n
+Ideia de cada um
 
-O(log n) → divide pela metade repetidamente
+Bubble → compara vizinhos
 
-O(n log n) → divide pela metade + percorre os elementos
+Selection → procura o menor
+
+Insertion → insere na posição
+
+Merge → divide e intercala
+
+Quick → pivô + partição
+
+Heap → Heap + remoção do topo
